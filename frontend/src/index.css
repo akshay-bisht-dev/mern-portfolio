@@ -1,0 +1,360 @@
+/* Universal CSS ================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: rgb(18, 246, 18);
+  color: white;
+}
+
+/* Navbar CSS ================================ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  padding: 15px 10px;
+}
+
+.menu a.active {
+  color: #fff;
+  background-color: rgb(255, 0, 0);
+}
+
+.menu a:hover {
+  color: #fff;
+  background-color: rgb(255, 0, 0);
+}
+
+/* Home Main CSS ================================ */
+
+.main_div {
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 80px 0;
+  background-color: black;
+}
+
+.main_div h1 {
+  background: url("./assets/home-h1-bg.gif");
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 120px;
+  text-transform: uppercase;
+  font-family: "Steelfish Rg", "helvetica neue", helvetica, arial, sans-serif;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+}
+
+.main_div h4 {
+  background: url("./assets/home-h4-bg.gif");
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 70px;
+  text-transform: uppercase;
+  font-family: "Steelfish Rg", "helvetica neue", helvetica, arial, sans-serif;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social a {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.resume_btn {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 15px 40px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+/* Home About CSS ================================ */
+
+.home_div {
+  width: 100%;
+  height: max-content;
+  background-color: rgb(3, 8, 36);
+  padding: 40px 0;
+}
+
+.home_div h1 {
+  color: rgb(0, 255, 89);
+}
+
+.home_div h4 {
+  color: rgb(255, 238, 0);
+}
+
+.home_div p {
+  color: #fff;
+}
+
+.about_div {
+  padding: 40px 0;
+}
+
+.about_img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 8px rgb(0, 255, 0));
+}
+
+/* Home Experience CSS ================================ */
+
+.education_tab .tab {
+  padding: 20px 10px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.education_tab .active_tab {
+  background-color: white;
+  color: red;
+}
+
+.tab_details {
+  padding: 50px 0;
+}
+
+.tab_details h2 {
+  color: rgb(0, 255, 0);
+}
+
+.tab_details h5 {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgb(0, 255, 0);
+  color: white;
+  font-size: 25px;
+}
+
+.tab_details span {
+  /* -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgb(0, 255, 0); */
+  color: white;
+}
+
+.para_height {
+  height: 150px;
+}
+
+/* Home Skills CSS ================================ */
+.skill_div {
+  padding: 60px 0;
+}
+
+.slide_imgs {
+  margin: 0 40px;
+}
+
+.slide_imgs img {
+  width: 50px;
+  height: auto;
+  transition: all 0.5s linear;
+  filter: grayscale(1);
+}
+
+.slide_imgs img:hover {
+  filter: grayscale(0);
+}
+
+/* Home Project CSS ================================ */
+
+.project_div {
+  padding: 40px 0;
+}
+
+.card_details h5 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-height: normal;
+}
+
+.card_details p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-height: normal;
+}
+
+.view_all {
+  text-decoration: none;
+  color: red;
+}
+
+/* Home Contact CSS ================================ */
+
+.contact_div {
+  background: url("./assets/contact.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(1);
+  overflow-x: hidden;
+}
+
+.contact_div:hover {
+  filter: grayscale(0);
+}
+
+.contact_left {
+  background: white;
+  margin: 30px 0;
+}
+
+.form_error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 0;
+  /* height: 16px; */
+}
+
+.error_div {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Footer CSS ================================ */
+
+footer {
+  padding: 15px 0;
+  /* background-color: #b9b6b6; */
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+.footer_text {
+  font-weight: bold;
+  color: red;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .main_div h1 {
+    font-size: 80px;
+  }
+
+  .main_div h4 {
+    font-size: 50px;
+  }
+
+  .resume_btn {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main_div h1 {
+    font-size: 35px;
+    -webkit-text-stroke-width: 1px;
+  }
+
+  .main_div h4 {
+    font-size: 22px;
+    -webkit-text-stroke-width: 1px;
+  }
+
+  .social a {
+    font-size: 1.5rem;
+  }
+
+  .resume_btn {
+    font-size: 12px;
+    padding: 8px 10px;
+    letter-spacing: 4px;
+  }
+
+  .skill_div {
+    padding: 30px 0;
+  }
+
+  .home_div h4 {
+    font-size: 15px;
+  }
+
+  .education_tab .tab {
+    padding: 10px 0;
+    /* font-weight: bold; */
+    font-size: 15px;
+  }
+
+  .tab_details h2 {
+    font-size: 18px;
+  }
+
+  .tab_details h5 {
+    -webkit-text-stroke-width: 0.1px;
+    font-size: 14px;
+  }
+
+  .para_height {
+    height: max-content;
+  }
+
+  .view_all {
+    font-size: 15px;
+  }
+
+  .contact_div {
+    position: relative;
+  }
+
+  .contact_left {
+    width: 300px;
+    margin: 50px auto;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
