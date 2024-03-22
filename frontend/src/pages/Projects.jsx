@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 // import defaultProjectImg from '../../assets/default-project-img.webp'
 import axios from 'axios'
 
-const API = "http://localhost:5000/api/projects";
+const API = "https://mern-portfolio-backend-zeta.vercel.app/api/projects";
 
 const Projects = () => {
 
